@@ -1,11 +1,13 @@
 // import { Accordion } from "./components/accordion"
 import './App.css'
-import { TreeView } from './components/tree-view'
+import { LightDarkMode } from './components/light-dark-mode'
+// import { QrGenerator } from './components/qr-generator'
+// import { TreeView } from './components/tree-view'
 // import { ImageSlider } from './components/image-slider'
 // import { LoadMoreData } from './components/load-more-button'
 // import { StarRating } from './components/star-rating'
 // import { RandomColor } from "./components/random-color"
-import {menus,MenuClass}from './components/tree-view/data'
+// import {menus,MenuClass}from './components/tree-view/data'
 
 
 
@@ -20,7 +22,9 @@ function App() {
     {/* <StarRating numberOfStars={10}/> */}
     {/* <ImageSlider url={"https://picsum.photos/v2/list"} limit={10} page={1}/> */}
     {/* <LoadMoreData/> */}
-    <TreeView menus={menus} />
+    {/* <TreeView menus={menus} /> */}
+    {/* <QrGenerator/> */}
+    <LightDarkMode/>
     </>
   )
 }

@@ -1,14 +1,22 @@
 import { useState } from "react"
 import { MenuList } from "./MenuList"
 
+interface MenuItemProps {
+  item:{
+    label:string;
+    children?:{
+      label:string;
+      children?:{label:string}[];
+    }[];
+  }
+}
 
 
+export const MenuItem : React.FC<MenuItemProps> = ({item}) => {
 
-export const MenuItem = ({item}) => {
+  const [displayCurrentChildren,setDisplayCurrentChildren] = useState<Record<string,boolean>>({})
 
-  const [displayCurrentChildren,setDisplayCurrentChildren] = useState({})
-
-  const handleToggleChildren = (getCurrentLabel) => {
+  const handleToggleChildren = (getCurrentLabel:string) => {
     setDisplayCurrentChildren({
       ...displayCurrentChildren,
       [getCurrentLabel]:!displayCurrentChildren[getCurrentLabel],

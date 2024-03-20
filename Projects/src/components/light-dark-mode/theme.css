@@ -1,0 +1,32 @@
+:root{
+  --background: #ffffff;
+  --text-primary:#000;
+  --buttong-bg:#000;
+  --buttont-text:#ffffff;
+}
+
+
+[data-theme='dark']{
+  --background: #000;
+  --text-primary:#ffffff;
+  --buttong-bg:#ffffff;
+  --buttont-text:#000;
+
+}
+
+
+.light-dark-mode{
+  background-color: var(--background);
+  transition: all 0.5s;
+}
+
+
+.light-dark-mode p {
+  color: var(--text-primary);
+}
+.light-dark-mode button {
+  background-color: var(--buttong-bg);
+  border: var(--buttong-bg);
+  color: var(--buttont-text);
+}
+
