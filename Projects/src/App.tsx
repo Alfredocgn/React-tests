@@ -1,6 +1,8 @@
 // import { Accordion } from "./components/accordion"
 import './App.css'
-import { LightDarkMode } from './components/light-dark-mode'
+// import { LightDarkMode } from './components/light-dark-mode'
+// import { ScrollIndicator } from './components/scroll-indicator'
+import { TabTest } from './components/tab-component/tab-test'
 // import { QrGenerator } from './components/qr-generator'
 // import { TreeView } from './components/tree-view'
 // import { ImageSlider } from './components/image-slider'
@@ -24,7 +26,9 @@ function App() {
     {/* <LoadMoreData/> */}
     {/* <TreeView menus={menus} /> */}
     {/* <QrGenerator/> */}
-    <LightDarkMode/>
+    {/* <LightDarkMode/> */}
+    {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> */}
+    <TabTest/>
     </>
   )
 }
