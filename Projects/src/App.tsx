@@ -1,8 +1,9 @@
 // import { Accordion } from "./components/accordion"
 import './App.css'
+import { ModalTest } from './components/modal-popup/modalTest'
 // import { LightDarkMode } from './components/light-dark-mode'
 // import { ScrollIndicator } from './components/scroll-indicator'
-import { TabTest } from './components/tab-component/tab-test'
+// import { TabTest } from './components/tab-component/tab-test'
 // import { QrGenerator } from './components/qr-generator'
 // import { TreeView } from './components/tree-view'
 // import { ImageSlider } from './components/image-slider'
@@ -28,7 +29,8 @@ function App() {
     {/* <QrGenerator/> */}
     {/* <LightDarkMode/> */}
     {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> */}
-    <TabTest/>
+    {/* <TabTest/> */}
+    <ModalTest/>
     </>
   )
 }
