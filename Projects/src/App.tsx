@@ -1,6 +1,8 @@
 // import { Accordion } from "./components/accordion"
 import './App.css'
-import { ModalTest } from './components/modal-popup/modalTest'
+// import { GithubProfileFinder } from './components/github-profile-finder'
+import { SearchAutocomplete } from './components/search-autocomplete'
+// import { ModalTest } from './components/modal-popup/modalTest'
 // import { LightDarkMode } from './components/light-dark-mode'
 // import { ScrollIndicator } from './components/scroll-indicator'
 // import { TabTest } from './components/tab-component/tab-test'
@@ -30,7 +32,9 @@ function App() {
     {/* <LightDarkMode/> */}
     {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> */}
     {/* <TabTest/> */}
-    <ModalTest/>
+    {/* <ModalTest/> */}
+    {/* <GithubProfileFinder/> */}
+    <SearchAutocomplete/>
     </>
   )
 }
