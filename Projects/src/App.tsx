@@ -1,7 +1,10 @@
 // import { Accordion } from "./components/accordion"
 import './App.css'
+import { FeatureFlags } from './components/feature-flag'
+import { FeatureFlagGlobalState } from './components/feature-flag/context'
+// import { TicTacToe } from './components/tic-tac-toe'
 // import { GithubProfileFinder } from './components/github-profile-finder'
-import { SearchAutocomplete } from './components/search-autocomplete'
+// import { SearchAutocomplete } from './components/search-autocomplete'
 // import { ModalTest } from './components/modal-popup/modalTest'
 // import { LightDarkMode } from './components/light-dark-mode'
 // import { ScrollIndicator } from './components/scroll-indicator'
@@ -34,7 +37,11 @@ function App() {
     {/* <TabTest/> */}
     {/* <ModalTest/> */}
     {/* <GithubProfileFinder/> */}
-    <SearchAutocomplete/>
+    {/* <SearchAutocomplete/> */}
+    {/* <TicTacToe/> */}
+    <FeatureFlagGlobalState>
+      <FeatureFlags/>
+    </FeatureFlagGlobalState>
     </>
   )
 }
